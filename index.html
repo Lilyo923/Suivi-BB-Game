@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Brad Bitt — Suivi de projet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">BB</div>
+      <div>
+        <h1>Brad Bitt — Suivi de projet</h1>
+        <p class="lead">Tableau de bord interactif pour suivre l'avancement</p>
+      </div>
+      <div class="top-controls">
+        <button class="btn" id="importBtn">Importer</button>
+        <button class="btn" id="exportBtn">Exporter</button>
+        <button class="btn primary" id="addBtn">+ Ajouter une étape</button>
+      </div>
+    </header>
+
+    <section class="progress-wrap">
+      <div class="progress-bar">
+        <div id="progressInner" class="progress-inner" style="width:0%"></div>
+      </div>
+      <div class="progress-meta">
+        <div id="progressText">0% complété</div>
+        <div class="small" id="countsText">0 / 0 étapes</div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <div class="card">
+        <div class="steps" id="stepsList"></div>
+        <div class="controls-row">
+          <input id="newTitle" type="text" placeholder="Nouvelle étape (ex: Scénario)" />
+          <button class="btn primary" id="createStep">Ajouter</button>
+        </div>
+      </div>
+
+      <aside class="right-col">
+        <div class="card">
+          <div class="small">Vue d'ensemble</div>
+          <div class="kpi">
+            <div class="num" id="doneNum">0</div>
+            <div class="small">étapes terminées</div>
+          </div>
+          <div class="small">Progression</div>
+          <div id="percentBig" class="big">0%</div>
+        </div>
+
+        <div class="card">
+          <div class="small">Notes rapides</div>
+          <textarea id="notes" placeholder="Idées, liens, ressources..."></textarea>
+          <div class="controls-row">
+            <button class="btn" id="saveNotes">Sauvegarder</button>
+            <button class="btn" id="clearAll">Réinitialiser</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="small">Export / Import</div>
+          <div class="controls-row">
+            <button class="btn" id="exportJson">Télécharger JSON</button>
+            <input id="importFile" type="file" accept="application/json" style="display:none">
+            <button class="btn" id="importFileBtn">Charger JSON</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>Fichier local (sauvegarde automatique dans le navigateur)</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
