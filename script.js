@@ -1,6 +1,6 @@
 // Liste des étapes (à modifier uniquement ici)
 const DEFAULT_STEPS = [
-  {id:1,title:'Concept global',desc:'Pitch, format (mini-série / jeu)',status:'todo'},
+  {id:1,title:'Concept global',desc:'Pitch, format (mini-série / jeu)',status:'doing'},
   {id:2,title:'Univers & ambiance',desc:'Style visuel, inspirations',status:'todo'},
   {id:3,title:'Personnages principaux',desc:'Fiches personnages et relations',status:'todo'},
   {id:4,title:'Plan narratif',desc:'Épisodes / niveaux',status:'todo'},
