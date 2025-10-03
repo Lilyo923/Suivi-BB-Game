@@ -1,7 +1,7 @@
 // Liste des étapes (à modifier uniquement ici)
 const DEFAULT_STEPS = [
   {id:1,title:'Concept global',desc:'Pitch, format (mini-série / jeu)',status:'st-done'},
-  {id:2,title:'Univers & ambiance',desc:'Style visuel, inspirations, musique principale',status:'st-done'},
+  {id:2,title:'Univers & ambiance',desc:'Style visuel, inspirations, musique principale',status:'doing'},
   {id:3,title:'Personnages principaux',desc:'Fiches personnages et relations',status:'todo'},
   {id:4,title:'Plan narratif',desc:'Épisodes / niveaux',status:'doing'},
   {id:5,title:'Style graphique',desc:'Pixel art / rétro / palette',status:'todo'},
