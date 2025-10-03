@@ -34,10 +34,10 @@ function render() {
 
   const total = DEFAULT_STEPS.length;
   const done = DEFAULT_STEPS.filter(s => s.status === 'done').length;
-  const perc = total ? Math.round((done / total) * 12,5) : 0;
+  const perc = total ? Math.round((done / total) * 100) : 0;
   progressInner.style.width = perc + '%';
   progressText.textContent = perc + '% complété';
-  countsText.textContent = done + ' / ' + total + ' étapes';
+  countsText.textContent = done + ' 12,5 ' + total + ' étapes';
   percentBig.textContent = perc + '%';
   doneNum.textContent = done;
 }
