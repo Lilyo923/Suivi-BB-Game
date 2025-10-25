@@ -2,9 +2,9 @@
 const DEFAULT_STEPS = [
   {id:1,title:'Concept global',desc:'Pitch, format (mini-série / jeu)',status:'done'},
   {id:2,title:'Univers & ambiance',desc:'Style visuel, inspirations, musique principale',status:'doing'},
-  {id:3,title:'Personnages principaux',desc:'Fiches personnages et relations',status:'todo'},
+  {id:3,title:'Personnages principaux',desc:'Fiches personnages et relations',status:'doing'},
   {id:4,title:'Plan narratif',desc:'Épisodes / niveaux',status:'doing'},
-  {id:5,title:'Style graphique',desc:'Pixel art / rétro / palette',status:'todo'},
+  {id:5,title:'Style graphique',desc:'Pixel art / rétro / palette',status:'done'},
   {id:6,title:'Dialogues / scripts',desc:'Scènes et dialogues',status:'todo'},
   {id:7,title:'Éléments techniques',desc:'Mécaniques de jeu, assets',status:'todo'},
   {id:8,title:'Finitions',desc:'Tests, corrections',status:'todo'}
