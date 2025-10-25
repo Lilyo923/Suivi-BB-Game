@@ -4,52 +4,142 @@
   --radius:14px; --pad:18px;
   color-scheme: dark;
 }
+
 body {
   font-family: Inter, system-ui, sans-serif;
-  margin:0; min-height:100vh;
+  margin:0;
+  min-height:100vh;
   background:linear-gradient(180deg,#071028,#081123 60%);
   color:#e6eef8;
 }
-.wrap { max-width:960px; margin:30px auto; padding:20px; }
-header { display:flex; gap:16px; align-items:center; }
+
+.wrap {
+  max-width:960px;
+  margin:30px auto;
+  padding:20px;
+}
+
+header {
+  display:flex;
+  gap:16px;
+  align-items:center;
+}
+
 .logo {
-  width:64px; height:64px; border-radius:12px;
+  width:64px;
+  height:64px;
+  border-radius:12px;
   background:linear-gradient(135deg,var(--accent),var(--accent-2));
-  display:flex; align-items:center; justify-content:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   font-weight:700;
 }
+
 h1 { margin:0; font-size:20px; }
 p.lead { margin:4px 0; color:var(--muted); font-size:13px; }
-.top-controls { margin-left:auto; display:flex; gap:8px; }
-.btn {
-  background:rgba(255,255,255,0.05); border:none; color:inherit;
-  padding:8px 12px; border-radius:10px; cursor:pointer;
+
+/* 🔹 Descente de la barre de progression */
+.progress-wrap {
+  margin-top:45px;
 }
-.btn.primary { background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#fff; }
 
-.progress-bar { height:14px; background:rgba(255,255,255,0.08); border-radius:999px; overflow:hidden; }
-.progress-inner { height:100%; width:0%; background:linear-gradient(90deg,var(--accent),var(--accent-2)); }
-.progress-meta { display:flex; justify-content:space-between; margin-top:6px; font-size:13px; color:var(--muted); }
+.progress-bar {
+  height:14px;
+  background:rgba(255,255,255,0.08);
+  border-radius:999px;
+  overflow:hidden;
+}
 
-.grid { display:grid; grid-template-columns:1fr 300px; gap:16px; margin-top:20px; }
-.card { background:var(--card); padding:var(--pad); border-radius:var(--radius); }
-.steps { display:flex; flex-direction:column; gap:12px; }
+.progress-inner {
+  height:100%;
+  width:0%;
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));
+}
 
-.step { display:flex; gap:12px; align-items:center; padding:10px; border-radius:10px; background:rgba(255,255,255,0.02); cursor:pointer; }
+.progress-meta {
+  display:flex;
+  justify-content:space-between;
+  margin-top:6px;
+  font-size:13px;
+  color:var(--muted);
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:1fr 300px;
+  gap:16px;
+  margin-top:20px;
+}
+
+.card {
+  background:var(--card);
+  padding:var(--pad);
+  border-radius:var(--radius);
+}
+
+.steps {
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.step {
+  display:flex;
+  gap:12px;
+  align-items:center;
+  padding:10px;
+  border-radius:10px;
+  background:rgba(255,255,255,0.02);
+  cursor:pointer;
+}
+
 .step h3 { margin:0; font-size:15px; }
 .step p { margin:4px 0 0; font-size:13px; color:var(--muted); }
-.status { margin-left:auto; font-size:13px; font-weight:600; }
+
+.status {
+  margin-left:auto;
+  font-size:13px;
+  font-weight:600;
+}
 .st-todo { color:var(--muted); }
 .st-doing { color:var(--warn); }
 .st-done { color:var(--ok); }
 
-.controls-row { display:flex; gap:8px; margin-top:10px; }
-input, textarea {
-  border:1px solid rgba(255,255,255,0.08);
-  background:transparent; color:inherit; border-radius:10px; padding:8px;
-}
-textarea { width:100%; min-height:120px; resize:vertical; }
 .kpi { display:flex; gap:6px; align-items:center; margin:8px 0; }
 .num { font-size:20px; font-weight:700; }
 .big { font-size:18px; font-weight:700; }
-footer { margin-top:20px; text-align:center; font-size:13px; color:var(--muted); }
+
+/* 🔹 Footer réorganisé */
+footer {
+  margin-top:40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:13px;
+  color:var(--muted);
+  text-align:center;
+  border-top:1px solid rgba(255,255,255,0.08);
+  padding-top:12px;
+}
+
+/* Teaser rétro à gauche */
+.footer-left {
+  font-family: "Press Start 2P", monospace;
+  color:#FFD700;
+  font-size:10px;
+}
+
+/* Version au centre */
+.footer-center {
+  font-size:12px;
+  color:var(--muted);
+}
+
+/* Studios à droite (police du jeu) */
+.footer-right {
+  font-family: "Press Start 2P", monospace;
+  font-size:10px;
+  color:#32C0C1;
+  text-shadow:0 0 6px rgba(50,192,193,0.5);
+}
