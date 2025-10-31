@@ -143,3 +143,43 @@ footer {
   color:#32C0C1;
   text-shadow:0 0 6px rgba(50,192,193,0.5);
 }
+/* --- Mobile optimisation responsive --- */
+@media (max-width: 768px) {
+  .wrap {
+    padding: 16px !important;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .progress-wrap {
+    margin-top: 10px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .steps {
+    gap: 14px;
+  }
+
+  .step {
+    padding: 14px;
+  }
+
+  footer {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}
