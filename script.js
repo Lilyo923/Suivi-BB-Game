@@ -45,5 +45,24 @@ function render() {
 function clsFor(status){ return status==='todo'?'st-todo':status==='doing'?'st-doing':'st-done'; }
 function labelFor(status){ return status==='todo'?'À faire':status==='doing'?'En cours':'Terminé'; }
 
-// Notes et export/import restent identiques
+function openModal() {
+  document.getElementById('modalOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('modalOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function closeModalOutside(event) {
+  if (event.target === document.getElementById('modalOverlay')) {
+    closeModal();
+  }
+}
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeModal();
+});
+
 render();
